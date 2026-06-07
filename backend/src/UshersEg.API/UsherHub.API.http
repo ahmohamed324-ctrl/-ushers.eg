@@ -1,0 +1,6 @@
+@UsherHub.API_HostAddress = http://localhost:5125
+
+GET {{UsherHub.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

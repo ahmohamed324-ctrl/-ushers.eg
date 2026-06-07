@@ -1,0 +1,94 @@
+2026-05-18 01:24:18.231 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 01:24:18.262 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Notification'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 01:24:18.263 +03:00 [WRN] Entity 'Job' has a global query filter defined and is the required end of a relationship with the entity 'SavedJob'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 01:24:18.263 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Subscription'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 01:24:18.263 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'UsherProfile'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 01:24:18.321 +03:00 [WRN] No store type was specified for the decimal property 'ExpectedSalaryPerDay' on entity type 'UsherProfile'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-05-18 01:24:19.075 +03:00 [INF] ✅ Database migrated and seeded successfully
+2026-05-18 01:24:19.080 +03:00 [INF] 🚀 UshersEg API running at 
+2026-05-18 01:24:19.136 +03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5125: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-05-18 02:18:04.628 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 02:18:04.657 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Notification'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 02:18:04.657 +03:00 [WRN] Entity 'Job' has a global query filter defined and is the required end of a relationship with the entity 'SavedJob'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 02:18:04.657 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Subscription'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 02:18:04.657 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'UsherProfile'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 02:18:04.707 +03:00 [WRN] No store type was specified for the decimal property 'ExpectedSalaryPerDay' on entity type 'UsherProfile'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-05-18 02:18:05.474 +03:00 [INF] ✅ Database migrated and seeded successfully
+2026-05-18 02:18:05.478 +03:00 [INF] 🚀 UshersEg API running at 
+2026-05-18 02:19:35.997 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 23.4663 ms
+2026-05-18 02:20:44.964 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 1.1634 ms
+2026-05-18 02:21:05.987 +03:00 [INF] HTTP GET / responded 404 in 1.6310 ms
+2026-05-18 02:21:33.204 +03:00 [INF] HTTP POST /api/v1/auth/register responded 400 in 141.1453 ms
+2026-05-18 02:21:43.414 +03:00 [INF] 📧 [LINK GENERATED] Welcome to ahmohamed325@gmail.com (KAMAL) as Usher
+2026-05-18 02:21:45.999 +03:00 [INF] ✅ Email sent successfully to ahmohamed325@gmail.com
+2026-05-18 02:21:46.036 +03:00 [INF] HTTP POST /api/v1/auth/register responded 200 in 3228.5357 ms
+2026-05-18 02:22:31.219 +03:00 [INF] 📧 [LINK GENERATED] Welcome to am77293411@gmail.com (Ahmed) as Usher
+2026-05-18 02:22:32.634 +03:00 [INF] ✅ Email sent successfully to am77293411@gmail.com
+2026-05-18 02:22:32.640 +03:00 [INF] HTTP POST /api/v1/auth/register responded 200 in 1559.7029 ms
+2026-05-18 02:22:36.900 +03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 226.5341 ms
+2026-05-18 02:22:38.476 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 136.1446 ms
+2026-05-18 02:22:38.703 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 52.9870 ms
+2026-05-18 02:28:11.600 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 02:28:11.633 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Notification'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 02:28:11.633 +03:00 [WRN] Entity 'Job' has a global query filter defined and is the required end of a relationship with the entity 'SavedJob'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 02:28:11.633 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Subscription'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 02:28:11.633 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'UsherProfile'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-18 02:28:11.688 +03:00 [WRN] No store type was specified for the decimal property 'ExpectedSalaryPerDay' on entity type 'UsherProfile'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-05-18 02:28:12.508 +03:00 [INF] ✅ Database migrated and seeded successfully
+2026-05-18 02:28:12.513 +03:00 [INF] 🚀 UshersEg API running at 
+2026-05-18 02:32:34.936 +03:00 [INF] HTTP GET / responded 404 in 33.2733 ms
+2026-05-18 02:32:57.233 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 1341.2471 ms
+2026-05-18 02:33:02.945 +03:00 [INF] HTTP GET / responded 404 in 7.6696 ms
+2026-05-18 02:33:05.387 +03:00 [INF] HTTP GET / responded 404 in 0.2916 ms
+2026-05-18 02:33:08.961 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 188.1459 ms
+2026-05-18 02:33:09.048 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.2591 ms
+2026-05-18 02:33:12.156 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 18.4579 ms
+2026-05-18 02:33:12.622 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.2405 ms
+2026-05-18 02:33:16.705 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 13.0478 ms
+2026-05-18 02:33:28.878 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 237.6101 ms
+2026-05-18 02:33:38.614 +03:00 [INF] HTTP GET /api/v1/jobs/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 363.9587 ms
+2026-05-18 02:33:56.891 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 22.7218 ms
+2026-05-18 02:34:16.914 +03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 482.8396 ms
+2026-05-18 02:34:18.383 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 110.3040 ms
+2026-05-18 02:34:18.622 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 48.5333 ms
+2026-05-18 02:34:49.387 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 14.3708 ms
+2026-05-18 02:35:37.632 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 40.5518 ms
+2026-05-18 02:35:40.878 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 2.9906 ms
+2026-05-18 02:35:44.491 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 3.3344 ms
+2026-05-18 02:36:48.143 +03:00 [INF] 📧 [LINK GENERATED] Welcome to am78293411@gmail.com (Ahmed) as Usher
+2026-05-18 02:36:49.875 +03:00 [INF] ✅ Email sent successfully to am78293411@gmail.com
+2026-05-18 02:36:49.883 +03:00 [INF] HTTP POST /api/v1/auth/register responded 200 in 2073.3028 ms
+2026-05-18 02:36:57.826 +03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 139.7368 ms
+2026-05-18 02:37:02.030 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 19.9676 ms
+2026-05-18 02:37:02.054 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 21.0379 ms
+2026-05-18 02:37:14.426 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 11.8188 ms
+2026-05-18 02:42:30.109 +03:00 [INF] 📧 [LINK GENERATED] Welcome to mohamedelrosassy@gmail.com (Mohamed) as Usher
+2026-05-18 02:42:31.648 +03:00 [INF] ✅ Email sent successfully to mohamedelrosassy@gmail.com
+2026-05-18 02:42:31.654 +03:00 [INF] HTTP POST /api/v1/auth/register responded 200 in 1687.0509 ms
+2026-05-18 02:42:37.751 +03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 129.2817 ms
+2026-05-18 02:42:38.978 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 15.4604 ms
+2026-05-18 02:42:39.265 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 12.6074 ms

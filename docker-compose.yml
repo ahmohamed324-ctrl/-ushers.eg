@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: usherhub_api
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      # NOTE: For Windows Authentication to work from Docker, you need specialized setup.
+      # If using Docker, you may need to switch to SQL Server Authentication (User Id=...;Password=...)
+      - ConnectionStrings__DefaultConnection=Server=host.docker.internal;Database=ushers.eg;Trusted_Connection=True;TrustServerCertificate=True;
+      - Jwt__SecretKey=UsherHub_Super_Secret_Key_For_JWT_Authentication_2024_Must_Be_At_Least_32_Chars!
+      - Jwt__Issuer=UsherHub
+      - Jwt__Audience=UsherHub.Clients
+      - Frontend__Url=http://localhost:3000
+    volumes:
+      - ./uploads:/app/Uploads
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: usherhub_web
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:5000/api/v1
+    depends_on:
+      - backend

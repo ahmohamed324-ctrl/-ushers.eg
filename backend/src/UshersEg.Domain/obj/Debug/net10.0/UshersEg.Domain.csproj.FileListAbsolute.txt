@@ -1,0 +1,11 @@
+C:\Users\kemo\Downloads\ushers.eg\backend\src\UshersEg.Domain\bin\Debug\net10.0\UshersEg.Domain.deps.json
+C:\Users\kemo\Downloads\ushers.eg\backend\src\UshersEg.Domain\bin\Debug\net10.0\UshersEg.Domain.dll
+C:\Users\kemo\Downloads\ushers.eg\backend\src\UshersEg.Domain\bin\Debug\net10.0\UshersEg.Domain.pdb
+C:\Users\kemo\Downloads\ushers.eg\backend\src\UshersEg.Domain\obj\Debug\net10.0\UshersEg.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kemo\Downloads\ushers.eg\backend\src\UshersEg.Domain\obj\Debug\net10.0\UshersEg.Domain.AssemblyInfoInputs.cache
+C:\Users\kemo\Downloads\ushers.eg\backend\src\UshersEg.Domain\obj\Debug\net10.0\UshersEg.Domain.AssemblyInfo.cs
+C:\Users\kemo\Downloads\ushers.eg\backend\src\UshersEg.Domain\obj\Debug\net10.0\UshersEg.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kemo\Downloads\ushers.eg\backend\src\UshersEg.Domain\obj\Debug\net10.0\UshersEg.Domain.dll
+C:\Users\kemo\Downloads\ushers.eg\backend\src\UshersEg.Domain\obj\Debug\net10.0\refint\UshersEg.Domain.dll
+C:\Users\kemo\Downloads\ushers.eg\backend\src\UshersEg.Domain\obj\Debug\net10.0\UshersEg.Domain.pdb
+C:\Users\kemo\Downloads\ushers.eg\backend\src\UshersEg.Domain\obj\Debug\net10.0\ref\UshersEg.Domain.dll

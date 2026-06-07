@@ -1,0 +1,271 @@
+2026-05-22 01:42:16.302 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 01:42:16.337 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Notification'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 01:42:16.338 +03:00 [WRN] Entity 'Job' has a global query filter defined and is the required end of a relationship with the entity 'SavedJob'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 01:42:16.338 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Subscription'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 01:42:16.338 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'UsherProfile'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 01:42:16.394 +03:00 [WRN] No store type was specified for the decimal property 'ExpectedSalaryPerDay' on entity type 'UsherProfile'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-05-22 01:42:17.219 +03:00 [INF] ✅ Database migrated and seeded successfully
+2026-05-22 01:42:17.224 +03:00 [INF] 🚀 UshersEg API running at 
+2026-05-22 01:43:16.537 +03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 780.9570 ms
+2026-05-22 01:43:17.037 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 326.5676 ms
+2026-05-22 01:43:17.055 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 15.9028 ms
+2026-05-22 01:43:17.164 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 453.4456 ms
+2026-05-22 01:43:17.175 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 9.4023 ms
+2026-05-22 01:44:20.693 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 63.8319 ms
+2026-05-22 01:44:20.699 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 4.5689 ms
+2026-05-22 01:44:22.157 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 89.7268 ms
+2026-05-22 01:44:24.985 +03:00 [INF] HTTP GET /api/v1/jobs/68b433b0-6906-4b2f-a94f-ac0abb2c6a04 responded 200 in 86.9947 ms
+2026-05-22 01:44:24.991 +03:00 [INF] HTTP GET /api/v1/jobs/68b433b0-6906-4b2f-a94f-ac0abb2c6a04 responded 200 in 5.3706 ms
+2026-05-22 01:44:28.097 +03:00 [INF] ✅ Email sent successfully to testusher3@example.com
+2026-05-22 01:44:28.994 +03:00 [INF] ✅ Email sent successfully to zeeyaaad30@gmail.com
+2026-05-22 01:44:28.996 +03:00 [INF] HTTP POST /api/v1/applications responded 200 in 2861.4052 ms
+2026-05-22 01:44:29.004 +03:00 [INF] HTTP GET /api/v1/jobs/68b433b0-6906-4b2f-a94f-ac0abb2c6a04 responded 200 in 4.9479 ms
+2026-05-22 01:45:09.106 +03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 244.0441 ms
+2026-05-22 01:45:09.270 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 11.9489 ms
+2026-05-22 01:45:09.274 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 16.4683 ms
+2026-05-22 01:45:09.275 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 4.0636 ms
+2026-05-22 01:45:09.303 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 27.6017 ms
+2026-05-22 01:45:14.205 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 13.4146 ms
+2026-05-22 01:45:15.220 +03:00 [INF] HTTP GET /api/v1/jobs/68b433b0-6906-4b2f-a94f-ac0abb2c6a04 responded 200 in 14.3070 ms
+2026-05-22 01:45:15.227 +03:00 [INF] HTTP GET /api/v1/jobs/68b433b0-6906-4b2f-a94f-ac0abb2c6a04 responded 200 in 6.4036 ms
+2026-05-22 01:45:17.874 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 4.8316 ms
+2026-05-22 01:45:19.218 +03:00 [INF] HTTP GET /api/v1/jobs/8cbedae5-747b-4e90-98c5-2eb3c0963d7b responded 200 in 5.4850 ms
+2026-05-22 01:45:19.224 +03:00 [INF] HTTP GET /api/v1/jobs/8cbedae5-747b-4e90-98c5-2eb3c0963d7b responded 200 in 4.8268 ms
+2026-05-22 01:45:21.378 +03:00 [INF] ✅ Email sent successfully to testusher3@example.com
+2026-05-22 01:45:22.389 +03:00 [INF] ✅ Email sent successfully to ahmohamed324@gmail.com
+2026-05-22 01:45:22.389 +03:00 [INF] HTTP POST /api/v1/applications responded 200 in 1955.9703 ms
+2026-05-22 01:45:22.397 +03:00 [INF] HTTP GET /api/v1/jobs/8cbedae5-747b-4e90-98c5-2eb3c0963d7b responded 200 in 4.6285 ms
+2026-05-22 01:48:24.763 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 01:48:24.790 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Notification'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 01:48:24.790 +03:00 [WRN] Entity 'Job' has a global query filter defined and is the required end of a relationship with the entity 'SavedJob'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 01:48:24.790 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Subscription'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 01:48:24.790 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'UsherProfile'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 01:48:24.836 +03:00 [WRN] No store type was specified for the decimal property 'ExpectedSalaryPerDay' on entity type 'UsherProfile'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-05-22 01:48:25.536 +03:00 [INF] ✅ Database migrated and seeded successfully
+2026-05-22 01:48:25.540 +03:00 [INF] 🚀 UshersEg API running at 
+2026-05-22 01:50:07.313 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 417.5857 ms
+2026-05-22 01:50:07.330 +03:00 [INF] HTTP GET /api/v1/jobs/8cbedae5-747b-4e90-98c5-2eb3c0963d7b responded 200 in 436.0055 ms
+2026-05-22 01:50:07.441 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 94.7927 ms
+2026-05-22 01:50:59.136 +03:00 [INF] HTTP GET /api/v1/jobs/8cbedae5-747b-4e90-98c5-2eb3c0963d7b responded 200 in 35.9301 ms
+2026-05-22 01:50:59.146 +03:00 [INF] HTTP GET /api/v1/jobs/8cbedae5-747b-4e90-98c5-2eb3c0963d7b responded 200 in 9.1107 ms
+2026-05-22 01:51:00.497 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 83.2151 ms
+2026-05-22 01:53:27.439 +03:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 330.1425 ms
+2026-05-22 01:53:30.666 +03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 348.4278 ms
+2026-05-22 01:53:30.700 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 7.4979 ms
+2026-05-22 01:53:30.873 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 79.3007 ms
+2026-05-22 01:53:30.883 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 8.6218 ms
+2026-05-22 01:53:30.935 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 141.5232 ms
+2026-05-22 01:53:30.947 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 10.4197 ms
+2026-05-22 01:53:38.883 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 13.8254 ms
+2026-05-22 01:53:41.604 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 3.3959 ms
+2026-05-22 01:53:41.605 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 4.7949 ms
+2026-05-22 01:53:41.609 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 3.8558 ms
+2026-05-22 01:53:41.611 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 4.6275 ms
+2026-05-22 01:54:37.945 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 14.1713 ms
+2026-05-22 01:54:37.950 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 18.9307 ms
+2026-05-22 01:54:37.950 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 3.8138 ms
+2026-05-22 01:54:37.955 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 4.0542 ms
+2026-05-22 01:59:40.726 +03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 149.6682 ms
+2026-05-22 01:59:40.760 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 7.2578 ms
+2026-05-22 01:59:41.068 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 75.0802 ms
+2026-05-22 01:59:41.074 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 5.3985 ms
+2026-05-22 01:59:41.230 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 149.3136 ms
+2026-05-22 01:59:41.230 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 149.0010 ms
+2026-05-22 01:59:41.230 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 149.3076 ms
+2026-05-22 01:59:41.239 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 6.0376 ms
+2026-05-22 01:59:41.239 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 5.8749 ms
+2026-05-22 01:59:41.240 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 4.6258 ms
+2026-05-22 01:59:51.368 +03:00 [INF] HTTP GET /api/v1/companies/my responded 200 in 49.3483 ms
+2026-05-22 01:59:51.371 +03:00 [INF] HTTP GET /api/v1/companies/my responded 200 in 2.7657 ms
+2026-05-22 02:00:22.405 +03:00 [INF] HTTP POST /api/v1/jobs responded 201 in 191.9717 ms
+2026-05-22 02:00:22.416 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 5.2366 ms
+2026-05-22 02:00:22.469 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 9.5709 ms
+2026-05-22 02:00:22.469 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 9.4532 ms
+2026-05-22 02:00:22.469 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 10.1927 ms
+2026-05-22 02:00:22.475 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 15.6925 ms
+2026-05-22 02:00:23.664 +03:00 [INF] ✅ Email sent successfully to ahmohamed325@gmail.com
+2026-05-22 02:00:24.709 +03:00 [INF] ✅ Email sent successfully to ahmohamed324@gmail.com
+2026-05-22 02:00:25.620 +03:00 [INF] ✅ Email sent successfully to am77293411@gmail.com
+2026-05-22 02:00:27.005 +03:00 [INF] ✅ Email sent successfully to am78293411@gmail.com
+2026-05-22 02:00:27.980 +03:00 [INF] ✅ Email sent successfully to sara.usher@demo.com
+2026-05-22 02:00:28.905 +03:00 [INF] ✅ Email sent successfully to zeeyaaad30@gmail.com
+2026-05-22 02:00:30.079 +03:00 [INF] ✅ Email sent successfully to test1@example.com
+2026-05-22 02:00:31.029 +03:00 [INF] ✅ Email sent successfully to mohamedelrosassy@gmail.com
+2026-05-22 02:00:32.021 +03:00 [INF] ✅ Email sent successfully to testusher2@example.com
+2026-05-22 02:00:32.909 +03:00 [INF] ✅ Email sent successfully to testusher@example.com
+2026-05-22 02:00:39.945 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 18.7419 ms
+2026-05-22 02:00:40.010 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 5.0004 ms
+2026-05-22 02:00:40.017 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 11.9112 ms
+2026-05-22 02:00:40.021 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 3.1801 ms
+2026-05-22 02:00:40.022 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 16.4011 ms
+2026-05-22 02:00:40.027 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 4.2550 ms
+2026-05-22 02:00:42.326 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 10.9555 ms
+2026-05-22 02:00:54.236 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 3.8704 ms
+2026-05-22 02:00:56.825 +03:00 [INF] HTTP GET /api/v1/jobs/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 14.3924 ms
+2026-05-22 02:00:56.831 +03:00 [INF] HTTP GET /api/v1/jobs/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 5.3482 ms
+2026-05-22 02:01:02.296 +03:00 [INF] ✅ Email sent successfully to events@elitehost.eg
+2026-05-22 02:01:03.208 +03:00 [INF] ✅ Email sent successfully to zeeyaaad30@gmail.com
+2026-05-22 02:01:03.210 +03:00 [INF] HTTP POST /api/v1/applications responded 200 in 2061.1764 ms
+2026-05-22 02:01:03.219 +03:00 [INF] HTTP GET /api/v1/jobs/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 4.1840 ms
+2026-05-22 02:01:08.420 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 2.7206 ms
+2026-05-22 02:01:08.495 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 2.6722 ms
+2026-05-22 02:01:08.520 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 27.1920 ms
+2026-05-22 02:01:08.549 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 28.6175 ms
+2026-05-22 02:01:08.561 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 25.9995 ms
+2026-05-22 02:01:08.561 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 20.3261 ms
+2026-05-22 02:01:08.563 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 28.4358 ms
+2026-05-22 02:01:08.569 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 33.9328 ms
+2026-05-22 02:01:08.571 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 3.3966 ms
+2026-05-22 02:01:08.572 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 4.1877 ms
+2026-05-22 02:01:08.572 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 5.8602 ms
+2026-05-22 02:01:08.574 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 4.4280 ms
+2026-05-22 02:01:17.294 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 5.1012 ms
+2026-05-22 02:01:17.300 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 5.6251 ms
+2026-05-22 02:01:17.308 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 4.9625 ms
+2026-05-22 02:01:17.308 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 5.0119 ms
+2026-05-22 02:01:17.309 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 5.8285 ms
+2026-05-22 02:01:17.309 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 5.8257 ms
+2026-05-22 02:01:17.318 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 5.4315 ms
+2026-05-22 02:01:17.318 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 5.4696 ms
+2026-05-22 02:01:17.319 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 5.6576 ms
+2026-05-22 02:01:17.319 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 5.8182 ms
+2026-05-22 02:03:15.345 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 12.9656 ms
+2026-05-22 02:03:15.404 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 5.3231 ms
+2026-05-22 02:03:15.422 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 22.5477 ms
+2026-05-22 02:03:15.428 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 4.5371 ms
+2026-05-22 02:03:15.467 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 21.8548 ms
+2026-05-22 02:03:15.467 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 20.6597 ms
+2026-05-22 02:03:15.472 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 4.3921 ms
+2026-05-22 02:03:15.491 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 23.3185 ms
+2026-05-22 02:03:15.494 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 48.7219 ms
+2026-05-22 02:03:15.499 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 4.6908 ms
+2026-05-22 02:03:15.509 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 62.3762 ms
+2026-05-22 02:03:15.513 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 3.1737 ms
+2026-05-22 02:19:02.898 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 38.4196 ms
+2026-05-22 02:19:02.906 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 6.4136 ms
+2026-05-22 02:19:02.942 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 28.5873 ms
+2026-05-22 02:19:02.944 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 30.9956 ms
+2026-05-22 02:19:02.948 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 4.1923 ms
+2026-05-22 02:19:02.949 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 3.2324 ms
+2026-05-22 02:19:02.955 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 41.5823 ms
+2026-05-22 02:19:02.963 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 50.0331 ms
+2026-05-22 02:19:02.965 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 7.0074 ms
+2026-05-22 02:19:02.973 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 8.6833 ms
+2026-05-22 02:19:22.160 +03:00 [INF] 📧 [LINK GENERATED] Application Update to zeeyaaad30@gmail.com: Job 'Quote Request — kamal' is now 'Accepted'
+2026-05-22 02:19:23.269 +03:00 [INF] ✅ Email sent successfully to zeeyaaad30@gmail.com
+2026-05-22 02:19:23.274 +03:00 [INF] HTTP PATCH /api/v1/applications/09f1f00f-db5a-4685-a6c5-d921e8c7d27e/status responded 200 in 1219.8467 ms
+2026-05-22 02:19:23.292 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 13.9859 ms
+2026-05-22 02:19:23.344 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 37.2558 ms
+2026-05-22 02:19:23.345 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 38.3916 ms
+2026-05-22 02:19:23.345 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 38.2415 ms
+2026-05-22 02:19:23.356 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 48.7058 ms
+2026-05-22 02:19:50.736 +03:00 [INF] HTTP POST /api/v1/jobs responded 201 in 39.6068 ms
+2026-05-22 02:19:50.764 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 19.6377 ms
+2026-05-22 02:19:50.787 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 3.1654 ms
+2026-05-22 02:19:50.787 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 2.3233 ms
+2026-05-22 02:19:50.787 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 2.5220 ms
+2026-05-22 02:19:50.788 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 4.0889 ms
+2026-05-22 02:19:50.788 +03:00 [INF] HTTP GET /api/v1/applications/job/e2eb5cb7-18d0-4e04-b86d-9ae4a004e382 responded 200 in 5.0729 ms
+2026-05-22 02:19:51.634 +03:00 [INF] ✅ Email sent successfully to ahmohamed325@gmail.com
+2026-05-22 02:19:52.529 +03:00 [INF] ✅ Email sent successfully to ahmohamed324@gmail.com
+2026-05-22 02:19:53.515 +03:00 [INF] ✅ Email sent successfully to am77293411@gmail.com
+2026-05-22 02:19:54.527 +03:00 [INF] ✅ Email sent successfully to am78293411@gmail.com
+2026-05-22 02:19:55.435 +03:00 [INF] ✅ Email sent successfully to sara.usher@demo.com
+2026-05-22 02:19:56.315 +03:00 [INF] ✅ Email sent successfully to zeeyaaad30@gmail.com
+2026-05-22 02:19:57.201 +03:00 [INF] ✅ Email sent successfully to test1@example.com
+2026-05-22 02:19:58.165 +03:00 [INF] ✅ Email sent successfully to mohamedelrosassy@gmail.com
+2026-05-22 02:19:59.051 +03:00 [INF] ✅ Email sent successfully to testusher2@example.com
+2026-05-22 02:20:00.006 +03:00 [INF] ✅ Email sent successfully to testusher@example.com
+2026-05-22 02:20:17.284 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 20.1625 ms
+2026-05-22 02:20:25.709 +03:00 [INF] HTTP GET /api/v1/jobs/e2eb5cb7-18d0-4e04-b86d-9ae4a004e382 responded 200 in 21.8122 ms
+2026-05-22 02:20:25.715 +03:00 [INF] HTTP GET /api/v1/jobs/e2eb5cb7-18d0-4e04-b86d-9ae4a004e382 responded 200 in 4.2419 ms
+2026-05-22 02:20:31.991 +03:00 [INF] ✅ Email sent successfully to events@elitehost.eg
+2026-05-22 02:20:32.960 +03:00 [INF] ✅ Email sent successfully to zeeyaaad30@gmail.com
+2026-05-22 02:20:32.961 +03:00 [INF] HTTP POST /api/v1/applications responded 200 in 5308.8776 ms
+2026-05-22 02:20:32.971 +03:00 [INF] HTTP GET /api/v1/jobs/e2eb5cb7-18d0-4e04-b86d-9ae4a004e382 responded 200 in 5.1356 ms
+2026-05-22 02:24:54.514 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 02:24:54.542 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Notification'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 02:24:54.542 +03:00 [WRN] Entity 'Job' has a global query filter defined and is the required end of a relationship with the entity 'SavedJob'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 02:24:54.542 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Subscription'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 02:24:54.542 +03:00 [WRN] Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'UsherProfile'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-22 02:24:54.588 +03:00 [WRN] No store type was specified for the decimal property 'ExpectedSalaryPerDay' on entity type 'UsherProfile'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-05-22 02:24:55.368 +03:00 [INF] ✅ Database migrated and seeded successfully
+2026-05-22 02:24:55.373 +03:00 [INF] 🚀 UshersEg API running at 
+2026-05-22 02:25:41.419 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 370.3512 ms
+2026-05-22 02:25:41.623 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 140.1306 ms
+2026-05-22 02:25:41.830 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 347.8694 ms
+2026-05-22 02:25:41.851 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 17.9455 ms
+2026-05-22 02:25:41.989 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 144.1281 ms
+2026-05-22 02:25:41.989 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 143.6875 ms
+2026-05-22 02:25:41.993 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 148.4240 ms
+2026-05-22 02:25:42.004 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 13.4043 ms
+2026-05-22 02:25:42.004 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 11.9971 ms
+2026-05-22 02:25:42.004 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 9.7793 ms
+2026-05-22 02:25:42.028 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 183.2625 ms
+2026-05-22 02:25:42.028 +03:00 [INF] HTTP GET /api/v1/applications/job/e2eb5cb7-18d0-4e04-b86d-9ae4a004e382 responded 200 in 183.2625 ms
+2026-05-22 02:25:42.038 +03:00 [INF] HTTP GET /api/v1/applications/job/e2eb5cb7-18d0-4e04-b86d-9ae4a004e382 responded 200 in 8.0809 ms
+2026-05-22 02:25:42.038 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 8.0812 ms
+2026-05-22 02:25:50.656 +03:00 [INF] 📧 [LINK GENERATED] Application Update to zeeyaaad30@gmail.com: Job 'Quote Request — kamal2' is now 'Accepted'
+2026-05-22 02:25:52.178 +03:00 [INF] ✅ Email sent successfully to zeeyaaad30@gmail.com
+2026-05-22 02:25:53.160 +03:00 [INF] ✅ Email sent successfully to events@elitehost.eg
+2026-05-22 02:25:53.186 +03:00 [INF] HTTP PATCH /api/v1/applications/cbe0f3dc-ed39-4289-a513-399dd5b5849d/status responded 200 in 2855.3330 ms
+2026-05-22 02:25:53.207 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 16.1062 ms
+2026-05-22 02:25:53.241 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 22.6656 ms
+2026-05-22 02:25:53.243 +03:00 [INF] HTTP GET /api/v1/applications/job/e2eb5cb7-18d0-4e04-b86d-9ae4a004e382 responded 200 in 23.9801 ms
+2026-05-22 02:25:53.244 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 25.3442 ms
+2026-05-22 02:25:53.245 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 26.7613 ms
+2026-05-22 02:25:53.249 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 30.5151 ms
+2026-05-22 02:26:45.826 +03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 328.9229 ms
+2026-05-22 02:26:45.864 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 5.1386 ms
+2026-05-22 02:26:45.989 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 7.7294 ms
+2026-05-22 02:26:46.000 +03:00 [INF] HTTP GET /api/v1/jobs/my responded 200 in 8.4625 ms
+2026-05-22 02:26:46.011 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 6.8816 ms
+2026-05-22 02:26:46.011 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 6.8815 ms
+2026-05-22 02:26:46.011 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 6.7481 ms
+2026-05-22 02:26:46.012 +03:00 [INF] HTTP GET /api/v1/applications/job/e2eb5cb7-18d0-4e04-b86d-9ae4a004e382 responded 200 in 7.2942 ms
+2026-05-22 02:26:46.012 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 6.8052 ms
+2026-05-22 02:26:46.052 +03:00 [INF] HTTP GET /api/v1/applications/job/6fee5890-af06-4f6d-95d5-e98bf1bc5958 responded 200 in 7.4416 ms
+2026-05-22 02:26:46.052 +03:00 [INF] HTTP GET /api/v1/applications/job/e2eb5cb7-18d0-4e04-b86d-9ae4a004e382 responded 200 in 7.4417 ms
+2026-05-22 02:26:46.053 +03:00 [INF] HTTP GET /api/v1/applications/job/b92689a3-9af1-46be-a059-43836c9eb4d9 responded 200 in 6.0761 ms
+2026-05-22 02:26:46.053 +03:00 [INF] HTTP GET /api/v1/applications/job/00074b4a-a66a-4be6-9e6a-8ccdc7ed59b3 responded 200 in 6.1762 ms
+2026-05-22 02:26:46.053 +03:00 [INF] HTTP GET /api/v1/applications/job/ff8e2add-1f47-42ec-8f8c-a9decb140e87 responded 200 in 6.1133 ms
+2026-05-22 02:27:11.825 +03:00 [INF] HTTP GET /api/v1/companies/my responded 200 in 60.7432 ms
+2026-05-22 02:27:11.828 +03:00 [INF] HTTP GET /api/v1/companies/my responded 200 in 2.5783 ms
+2026-05-22 02:27:15.859 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 5.4336 ms
+2026-05-22 02:28:09.483 +03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 252.8446 ms
+2026-05-22 02:28:09.504 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 4.6856 ms
+2026-05-22 02:28:09.778 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 66.6421 ms
+2026-05-22 02:28:09.785 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 5.9132 ms
+2026-05-22 02:28:09.806 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 94.5623 ms
+2026-05-22 02:28:09.815 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 7.5311 ms
+2026-05-22 02:28:17.683 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 71.1052 ms
+2026-05-22 02:28:22.549 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 3.7688 ms
+2026-05-22 02:28:22.550 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 4.6608 ms
+2026-05-22 02:28:22.554 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 3.4466 ms
+2026-05-22 02:28:22.555 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 10.4173 ms
+2026-05-22 02:28:22.556 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 4.4077 ms
+2026-05-22 02:28:22.560 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 3.6917 ms
+2026-05-22 02:28:39.504 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 2.0073 ms
+2026-05-22 02:28:41.277 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 4.4803 ms
+2026-05-22 02:28:43.748 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 2.7793 ms
+2026-05-22 02:28:43.748 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 4.0191 ms
+2026-05-22 02:28:43.754 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 5.4642 ms
+2026-05-22 02:28:43.755 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 6.3962 ms
+2026-05-22 02:28:48.020 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 1.9280 ms
+2026-05-22 02:28:48.023 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 2.1742 ms
+2026-05-22 02:28:51.521 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 3.4099 ms
+2026-05-22 02:28:52.949 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 2.3122 ms
+2026-05-22 02:28:52.953 +03:00 [INF] HTTP GET /api/v1/users/me responded 200 in 2.6771 ms
+2026-05-22 02:28:52.954 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 3.6203 ms
+2026-05-22 02:28:52.956 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 5.9848 ms
+2026-05-22 02:28:52.959 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 2.9511 ms
+2026-05-22 02:28:52.961 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 3.6862 ms
+2026-05-22 02:29:09.513 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 13.0021 ms
+2026-05-22 02:29:23.105 +03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 140.3378 ms
+2026-05-22 02:29:23.125 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 2.9818 ms
+2026-05-22 02:29:23.225 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 18.6775 ms
+2026-05-22 02:29:23.233 +03:00 [INF] HTTP GET /api/v1/jobs/saved responded 200 in 4.3694 ms
+2026-05-22 02:29:23.235 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 28.5041 ms
+2026-05-22 02:29:23.240 +03:00 [INF] HTTP GET /api/v1/applications/my responded 200 in 4.4113 ms
+2026-05-22 02:29:25.524 +03:00 [INF] HTTP GET /api/v1/jobs responded 200 in 11.0814 ms
+2026-05-22 02:29:53.133 +03:00 [INF] HTTP GET /api/v1/notifications/me responded 200 in 1.6634 ms
