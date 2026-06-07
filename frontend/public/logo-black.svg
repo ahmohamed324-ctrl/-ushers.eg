@@ -1,0 +1,23 @@
+<svg width="300" height="100" viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&amp;display=swap');
+      .logo-text { 
+        font-family: 'Cormorant Garamond', serif; 
+        font-weight: 500;
+        letter-spacing: 0.15em;
+      }
+      .tagline { 
+        font-family: sans-serif; 
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        text-transform: lowercase;
+      }
+    </style>
+  </defs>
+  <g class="logo-text" style="font-size: 64px;">
+    <text x="50%" y="60" text-anchor="middle" fill="black">USHERS</text>
+    <line x1="12" y1="12" x2="12" y2="80" stroke="black" stroke-width="0.5" opacity="0.8" />
+  </g>
+  <text x="50%" y="85" text-anchor="middle" fill="black" opacity="0.7" class="tagline" style="font-size: 12px;">The people behind great events</text>
+</svg>

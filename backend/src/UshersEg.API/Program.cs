@@ -152,7 +152,14 @@ using (var scope = app.Services.CreateScope())
     var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     try
     {
-        await db.Database.MigrateAsync();
+        if (db.Database.ProviderName == "Microsoft.EntityFrameworkCore.SqlServer")
+        {
+            await db.Database.MigrateAsync();
+        }
+        else
+        {
+            await db.Database.EnsureCreatedAsync();
+        }
         await DatabaseSeeder.SeedAsync(db);
         Log.Information("✅ Database migrated and seeded successfully");
     }

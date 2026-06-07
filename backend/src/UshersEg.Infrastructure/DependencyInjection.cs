@@ -11,9 +11,18 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
+        var connectionString = configuration.GetConnectionString("DefaultConnection");
         services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
-                sqlOptions => sqlOptions.EnableRetryOnFailure(3)));
+        {
+            if (connectionString != null && (connectionString.Contains("Host=") || connectionString.Contains("Port=")))
+            {
+                options.UseNpgsql(connectionString, sqlOptions => sqlOptions.EnableRetryOnFailure(3));
+            }
+            else
+            {
+                options.UseSqlServer(connectionString, sqlOptions => sqlOptions.EnableRetryOnFailure(3));
+            }
+        });
 
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IJwtService, JwtService>();

@@ -1,0 +1,365 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   USHERS.EG — LUXURY DESIGN SYSTEM
+   Inspired by: deep navy keyhole brand mark + warm cream palette
+   ============================================================ */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-display);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.5);
+  --radius-2xl: calc(var(--radius) * 2);
+  --radius-3xl: calc(var(--radius) * 3);
+}
+
+/* ──────────────────────────────────────────
+   LIGHT MODE — Cream & Navy
+   Background: warm cream  |  Accent: navy
+   ────────────────────────────────────────── */
+:root {
+  /* Warm cream backgrounds — matched to brand keyhole image */
+  --background: oklch(0.93 0.012 80);          /* #EDE8E1 warm cream from brand */
+  --foreground: oklch(0.16 0.045 248);          /* #0F1B3D deep navy */
+
+  --card: oklch(0.95 0.010 80);                /* #F4F0EA warm card cream */
+  --card-foreground: oklch(0.16 0.045 248);
+
+  --popover: oklch(0.96 0.008 80);
+  --popover-foreground: oklch(0.16 0.045 248);
+
+  /* Primary = deep navy */
+  --primary: oklch(0.20 0.055 248);            /* #0F1B3D navy */
+  --primary-foreground: oklch(0.96 0.008 80);  /* cream white */
+
+  /* Secondary = soft cream tone */
+  --secondary: oklch(0.89 0.016 80);
+  --secondary-foreground: oklch(0.20 0.055 248);
+
+  --muted: oklch(0.90 0.014 80);
+  --muted-foreground: oklch(0.48 0.030 248);
+
+  --accent: oklch(0.87 0.018 80);
+  --accent-foreground: oklch(0.18 0.050 248);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.84 0.016 80);
+  --input: oklch(0.87 0.014 80);
+  --ring: oklch(0.20 0.055 248);
+
+  /* Chart */
+  --chart-1: oklch(0.20 0.055 248);
+  --chart-2: oklch(0.35 0.060 248);
+  --chart-3: oklch(0.50 0.050 248);
+  --chart-4: oklch(0.65 0.030 248);
+  --chart-5: oklch(0.75 0.015 80);
+
+  /* Sidebar — cream panel */
+  --sidebar: oklch(0.91 0.014 80);
+  --sidebar-foreground: oklch(0.16 0.045 248);
+  --sidebar-primary: oklch(0.20 0.055 248);
+  --sidebar-primary-foreground: oklch(0.96 0.008 80);
+  --sidebar-accent: oklch(0.87 0.018 80);
+  --sidebar-accent-foreground: oklch(0.20 0.055 248);
+  --sidebar-border: oklch(0.83 0.016 80);
+  --sidebar-ring: oklch(0.20 0.055 248);
+
+  --radius: 0.625rem;
+}
+
+/* ──────────────────────────────────────────
+   DARK MODE — Deep Navy  (PRIMARY LOOK)
+   This IS the luxury mode — navy + cream
+   ────────────────────────────────────────── */
+.dark {
+  /* Navy depth levels */
+  --background: oklch(0.13 0.038 248);          /* #0A1425 deepest navy */
+  --foreground: oklch(0.95 0.008 82);            /* warm cream white */
+
+  --card: oklch(0.17 0.042 248);                /* #0F1B3D card navy */
+  --card-foreground: oklch(0.95 0.008 82);
+
+  --popover: oklch(0.18 0.044 248);
+  --popover-foreground: oklch(0.95 0.008 82);
+
+  /* Primary on dark = cream/white (for buttons) */
+  --primary: oklch(0.94 0.010 82);              /* cream primary */
+  --primary-foreground: oklch(0.14 0.042 248);  /* navy text on cream */
+
+  --secondary: oklch(0.22 0.048 248);           /* elevated navy */
+  --secondary-foreground: oklch(0.88 0.012 82);
+
+  --muted: oklch(0.20 0.042 248);
+  --muted-foreground: oklch(0.65 0.025 248);    /* muted blue-gray */
+
+  --accent: oklch(0.24 0.050 248);
+  --accent-foreground: oklch(0.92 0.010 82);
+
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(0.26 0.048 248);              /* subtle navy border */
+  --input: oklch(0.20 0.044 248);
+  --ring: oklch(0.70 0.020 82);                 /* cream ring */
+
+  /* Chart */
+  --chart-1: oklch(0.88 0.012 82);
+  --chart-2: oklch(0.70 0.018 82);
+  --chart-3: oklch(0.50 0.025 248);
+  --chart-4: oklch(0.35 0.040 248);
+  --chart-5: oklch(0.25 0.048 248);
+
+  /* Sidebar — darkest navy panel */
+  --sidebar: oklch(0.11 0.036 248);             /* deepest sidebar navy */
+  --sidebar-foreground: oklch(0.92 0.010 82);
+  --sidebar-primary: oklch(0.92 0.010 82);
+  --sidebar-primary-foreground: oklch(0.13 0.038 248);
+  --sidebar-accent: oklch(0.20 0.044 248);
+  --sidebar-accent-foreground: oklch(0.90 0.012 82);
+  --sidebar-border: oklch(0.22 0.044 248);
+  --sidebar-ring: oklch(0.70 0.020 82);
+}
+
+/* ──────────────────────────────────────────
+   BASE LAYER
+   ────────────────────────────────────────── */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1, "kern" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display), 'Georgia', serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* ──────────────────────────────────────────
+   LUXURY UTILITY CLASSES
+   ────────────────────────────────────────── */
+@layer utilities {
+
+  /* Cards */
+  .luxury-card {
+    background: oklch(0.17 0.042 248 / 0.95);
+    border: 1px solid oklch(0.26 0.048 248 / 0.6);
+    backdrop-filter: blur(20px);
+    box-shadow:
+      0 4px 24px oklch(0.08 0.030 248 / 0.6),
+      0 1px 0 oklch(0.30 0.040 248 / 0.4) inset;
+  }
+
+  .luxury-card-light {
+    background: oklch(0.98 0.004 82 / 0.95);
+    border: 1px solid oklch(0.85 0.015 82 / 0.8);
+    backdrop-filter: blur(20px);
+    box-shadow:
+      0 4px 32px oklch(0.16 0.045 248 / 0.08),
+      0 1px 0 oklch(0.99 0 0 / 0.9) inset;
+  }
+
+  /* Glow effect */
+  .luxury-glow {
+    box-shadow:
+      0 0 40px oklch(0.20 0.055 248 / 0.25),
+      0 0 80px oklch(0.20 0.055 248 / 0.10);
+  }
+
+  .luxury-glow-cream {
+    box-shadow:
+      0 0 30px oklch(0.94 0.010 82 / 0.15),
+      0 0 60px oklch(0.94 0.010 82 / 0.06);
+  }
+
+  /* Gradients */
+  .bg-navy-gradient {
+    background: linear-gradient(
+      135deg,
+      oklch(0.10 0.036 248) 0%,
+      oklch(0.16 0.048 248) 50%,
+      oklch(0.12 0.040 248) 100%
+    );
+  }
+
+  .bg-cream-gradient {
+    background: linear-gradient(
+      135deg,
+      oklch(0.96 0.008 82) 0%,
+      oklch(0.91 0.014 82) 100%
+    );
+  }
+
+  /* Text styles */
+  .text-display {
+    font-family: var(--font-display), 'Georgia', serif;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+
+  .text-cream {
+    color: oklch(0.94 0.010 82);
+  }
+
+  .text-navy {
+    color: oklch(0.16 0.045 248);
+  }
+
+  .text-muted-navy {
+    color: oklch(0.62 0.028 248);
+  }
+
+  /* Borders */
+  .luxury-border {
+    border: 1px solid oklch(0.28 0.046 248 / 0.5);
+  }
+
+  .luxury-border-light {
+    border: 1px solid oklch(0.84 0.016 82 / 0.8);
+  }
+
+  /* Section backgrounds */
+  .section-navy {
+    background: oklch(0.13 0.038 248);
+  }
+
+  .section-navy-elevated {
+    background: oklch(0.17 0.042 248);
+  }
+
+  .section-cream {
+    background: oklch(0.94 0.010 82);
+  }
+
+  /* Divider lines */
+  .divider-navy {
+    border-color: oklch(0.26 0.048 248 / 0.4);
+  }
+
+  .divider-cream {
+    border-color: oklch(0.84 0.016 82 / 0.6);
+  }
+
+  /* Button styles */
+  .btn-luxury-primary {
+    background: oklch(0.94 0.010 82);
+    color: oklch(0.14 0.042 248);
+    border: 1px solid oklch(0.90 0.012 82 / 0.3);
+    transition: all 0.2s ease;
+  }
+
+  .btn-luxury-primary:hover {
+    background: oklch(0.98 0.004 82);
+    box-shadow: 0 8px 32px oklch(0.94 0.010 82 / 0.3);
+    transform: translateY(-1px);
+  }
+
+  .btn-luxury-ghost {
+    background: transparent;
+    color: oklch(0.90 0.010 82);
+    border: 1px solid oklch(0.30 0.044 248 / 0.6);
+    transition: all 0.2s ease;
+  }
+
+  .btn-luxury-ghost:hover {
+    background: oklch(0.20 0.044 248 / 0.5);
+    border-color: oklch(0.65 0.020 82 / 0.4);
+  }
+
+  /* Stat card numbers */
+  .stat-number {
+    font-family: var(--font-display), 'Georgia', serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    color: oklch(0.94 0.010 82);
+    line-height: 1;
+  }
+
+  /* Input luxury */
+  .input-luxury {
+    background: oklch(0.19 0.044 248 / 0.7);
+    border: 1px solid oklch(0.28 0.044 248 / 0.6);
+    color: oklch(0.95 0.008 82);
+    transition: all 0.2s ease;
+  }
+
+  .input-luxury:focus {
+    border-color: oklch(0.70 0.020 82 / 0.5);
+    box-shadow: 0 0 0 3px oklch(0.70 0.020 82 / 0.08);
+  }
+
+  /* Badge */
+  .badge-navy {
+    background: oklch(0.22 0.048 248);
+    color: oklch(0.80 0.018 82);
+    border: 1px solid oklch(0.28 0.046 248 / 0.5);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: oklch(0.13 0.038 248);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: oklch(0.28 0.046 248);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.35 0.044 248);
+  }
+}
